@@ -1,0 +1,690 @@
+@media screen and (max-width: 678px){
+
+nav{
+    position: relative;
+    z-index: 1000;
+}
+
+    .nav-links{
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--accent-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+        bottom: 0;
+    }
+
+    body{
+        overflow-x: hidden;
+        /* to avoid horizontal scrolling */
+    }
+
+    .nav-links li{
+        opacity: 0;
+        /* to make links not visible at first */
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        left: 270px;
+    }
+
+    /* transform the nav links back to position */
+    .nav-active{
+        transform: translate(0);
+    }
+    
+
+
+    /* Animate the navigation links one by one */
+
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px)
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    /* toggle the lines */
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2{
+        opacity: 0;
+    }
+
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+
+.logo h1{
+ font-size: 10px;
+}
+
+/* Home page */
+
+/* Home styling */
+
+.intro{
+    background-color: #033915;
+    height: 500px;
+    width: 300px;
+    padding: 15px;
+    position: absolute;
+    left: 10px;
+    top: 100px;
+}
+
+.intro h1{
+    position: absolute;
+    top: 190px;
+    left: 55px;
+    font-size: 30px;
+    font-family:var(--headline-font);
+    color: antiquewhite;
+    font-weight: lighter;
+}
+
+.intro h3{
+    position: absolute;
+    top: 250px;
+    left: 60px;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family:var(--body-font);
+}
+
+.intro h6{
+    color: aliceblue;
+    position: absolute;
+    font-size: 6px;
+}
+button{
+    position: absolute;
+    top: 350px;
+    left: 70px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+button a{
+    text-decoration: none;
+}
+/* portfolio */
+
+.portfolio .gd h1{
+    position: absolute;
+    left: 123px;
+    top: 70px;
+    text-decoration: underline;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    }
+    
+    .gd .images{
+        padding: 15px;
+        position: absolute;
+        top: 100px;
+        
+    }
+    
+    .gd .no1{
+        width: 140px;
+        height: 140px;
+    
+    }
+    
+    .no2{
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        left: 165px;
+    }
+    
+    .no3{
+        width: 140px;
+        height: 170px;
+        position: absolute;
+        top: 200px;
+        left: 15px;
+    }
+    
+    .no4{
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        top: 200px;
+        left: 165px;
+    }
+    
+    .gd .images2{
+        padding: 15px;
+        position: absolute;
+        top: 480px;
+        
+    }
+    
+    .gd .no5{
+        width: 290px;
+        height: 170px;
+    
+    }
+    
+    .no6{
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        top: 230px;
+        left: 15px;
+    }
+    
+    .no7{
+        width: 140px;
+        height: 170px;
+        position: absolute;
+        left: 165px;
+        top: 230px;
+    }
+    
+    .no8{
+        width: 140px;
+        height: 170px;
+        position: absolute;
+        top: 440px;
+        left: 15px;
+    }
+    
+    .gd .no9{
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        top: 920px;
+        left: 165px;
+        
+    }
+    
+    
+    .sd h1{
+    position: absolute;
+    left: 110px;
+    top: 1150px;
+    text-decoration: underline;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    }
+    
+    .sd .images{
+        padding: 35px;
+        position: absolute;
+        top: 1190px;
+        
+    }
+    
+    .sd .no1{
+        width: 250px;
+        height: 150px;
+    
+    }
+    
+    .sd .no2{
+        width: 320px;
+        height: 210px;
+        position: absolute;
+        top: 200px;
+        left: 4px;
+        padding: 35px;
+    }
+    
+/* Contact Page */
+
+.contact .cv{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.cv h1{
+    font-family:var(--body-font);
+    font-size: 12px;
+    left: 45px;
+    
+}
+
+.cv .mycv{
+    position: absolute;
+    top: 60px;
+    left: -15px;
+}
+.contacts h5{
+    position: absolute;
+    top: 300px;
+    left: 105px;
+}
+.contacts p{
+    position: absolute;
+    top: 350px;
+    left: 60px;
+    font-size: 13px;
+}
+
+.contacts .email{
+    position: absolute;
+    top: 380px;
+}
+
+.socials{
+    position: absolute;
+    top: 490px;
+    left: 105px;
+}
+
+.socials p{
+    position: absolute;
+    left: -5px;
+    top: 50px;
+}
+
+.socials .icons{
+    position: absolute;
+    top: 80px;
+    left: 20px;
+}
+
+/* about */
+
+.about img{
+    width: 390px;
+    height: 560px;
+    position: absolute;
+    top: 60px;
+    left: -20px;
+}
+
+.about .aboutme{
+    position: absolute;
+    left: 30px;
+    top: 130px;
+    background-color: aliceblue;
+    width: 260px;
+    height: 420px;
+}
+
+.aboutme h3{
+    position: absolute;
+    top: 10px;
+    left: 80px;
+}
+.aboutme p{
+    font-family: var(--body-font);
+    font-size: 10px;
+    font-weight: 600;
+    position: absolute;
+    left: 8px;
+    width: 250px;
+    text-align: center;
+    top: 50px;
+}
+
+.about .iconic{
+    position: absolute;
+    left: 82px;
+    top: 590px;
+    padding: 20px;
+    font-size: 8px;
+}
+
+.about .iconic .iconsticker .img1{
+    position: absolute;
+    top: 20px;
+    width: 90px;
+    height: 60px;
+    left: -10px;
+}
+
+.about .iconic .iconsticker .img2{
+    position: absolute;
+    top: 10px;
+    width: 90px;
+    height: 70px;
+    left: 75px;
+}
+
+.about .iconic .icons{
+    position: absolute;
+    top: 60px;
+}
+
+/* inside my portfolio posts  */
+/* lash */
+
+.lash h3{
+    position: absolute;
+    left: 60px;
+    top: 70px;
+    font-size: 15px;
+}
+
+.lash .biz{
+    position: absolute;
+    top: 390px;
+    left: 20px;
+    width: 300px;
+    font-size: 12px;
+}
+
+.lash .img1{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    top: 150px;
+    left: 7px;
+}
+
+.lash .img2{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    top: 150px;
+    left: 165px;
+}
+
+.lash .pics .img3{
+    width: 157px;
+    height: 157px;
+    position: absolute;
+    top: 600px;
+    left: 170px;
+}
+
+
+.lash .pics .img4{
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 600px;
+    
+}
+
+.lash .pics .img5{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 800px;
+    left: -10px;
+    padding: 10px;
+}
+
+/* .lash .pics .img6{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 1950px;
+    left: 400px;
+    
+} */
+
+.lash .pics .img7{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 1000px;
+    left: 0px;
+    padding: 10px;
+
+    
+}
+
+.lash .pics p{
+    width: 160px;
+    font-family: var(--body-font);
+    position: absolute;
+    top: 900px;
+    left: 150px;
+    font-size: 13px;
+}
+
+/* blue */
+
+.blue h3{
+    position: absolute;
+    left: 115px;
+    top: 100px;
+    font-size: 13px;
+}
+
+.blue .img1{
+    position: absolute;
+    left: 60px;
+    top: 160px;
+    width: 200px;
+    height: 200px;
+}
+
+.blue .pics img{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 400px;
+    left: 20px;
+}
+
+.blue .pics .img3{
+    position: absolute;
+    left: 170px;
+}
+
+.blue .pics .img4{
+    position: absolute;
+    top: 550px;
+    left: 20px;
+}
+
+.blue .pics .img5{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 550px;
+    left: 170px;
+}
+
+.blue .pics .img6{
+    position: absolute;
+    top: 700px;
+    left: 20px;
+    padding-bottom: 10px;
+}
+
+.blue .pics .img7{
+    position: absolute;
+    top: 700px;
+    left: 170px;
+    padding-bottom: 10px;
+}
+
+/* lipstick */
+
+.lips img{
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    
+    }
+    
+    .lips .img2{
+        position: absolute;
+        top: 370px;
+        left: 10px;
+    }
+    
+    /* pink */
+    
+    .pink img{
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+        position: absolute;
+        top: 50px;
+        left: 10px;
+    }
+    
+    /* brochure */
+    
+    .brochure img{
+        width: 350px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        position: absolute;
+        left: -15px;
+    }
+    
+    .brochure .img2{
+        position: absolute;
+        top: 300px;
+    }
+    
+    /* magazine */
+    .magazine .mag img{
+        width: 320px;
+        height: 520px;
+        position: absolute;
+        top: 40px;
+        left: -5px;
+        padding: -15px;
+    }
+    .magazine img{
+        width: 400px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 500px;
+        left: -45px;
+        padding: 60px;
+    }
+    
+    .magazine .img2{
+        position: absolute;
+        top: 700px;
+    }
+    
+    .magazine .img3{
+        position: absolute;
+        top: 900px;
+    }
+    
+    
+    /* skincare */
+    
+    .skn h3{
+        position: absolute;
+        top: 70px;
+        left: 80px;
+        font-family:'Arial Narrow', Arial, sans-serif;
+        font-weight: lighter;
+        font-size: 15px;
+    }
+    
+    .skn .pics img{
+        width: 300px;
+        height: 400px;
+        padding: 20px;
+        position: absolute;
+        top: 100px;
+        left: 10px;
+    }
+    
+    .skn .pics .pic2{
+        position: absolute;
+        top: 500px;
+        left: 10px;
+    }
+    
+    .skn .pics .pic3{
+        position: absolute;
+        top: 900px;
+        left: 10px;
+    }
+    
+    .skn .pics .pic4{
+        position: absolute;
+        top: 1300px;
+        left: 10px;
+    }
+
+    /* other */
+
+.other img{
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    position: absolute;
+    left: 10px;
+}
+
+.other .img2{
+position: absolute;
+top: 300px;
+left: 10px;
+}
+
+.other .img3{
+    position: absolute;
+    top: 555px;
+    left: 10px;
+}
+
+.other .img4{
+    position: absolute;
+    top: 810px;
+}
+
+.other .img5{
+    position: absolute;
+    width: 300px;
+    height: 320px;
+    top: 1060px;
+    left: 10px;
+}
+
+.other .img6{
+    position: absolute;
+    top: 1330px;
+    left: 10px;
+    width: 300px;
+    height: 330px;
+}
+    
+    
+
+
+
+
+
+
+
+
+
+}
