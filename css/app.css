@@ -98,8 +98,8 @@ nav .icons a{
 
 .intro{
     background-color: #033915;
-    height: 700px;
-    width: 1250px;
+    height: 550px;
+    width: 1320px;
     padding: 15px;
     position: absolute;
     left: 80px;
@@ -109,7 +109,7 @@ nav .icons a{
 .intro h1{
     position: absolute;
     top: 190px;
-    left: 350px;
+    left: 430px;
     font-size: 70px;
     font-family:var(--headline-font);
     color: antiquewhite;
@@ -119,7 +119,7 @@ nav .icons a{
 .intro h3{
     position: absolute;
     top: 280px;
-    left: 430px;
+    left: 510px;
     color: aliceblue;
     font-size: 25px;
     font-weight: lighter;
@@ -134,7 +134,7 @@ nav .icons a{
 button{
     position: absolute;
     top: 350px;
-    left: 490px;
+    left: 570px;
     width: 150px;
     height: 40px;
     border-radius: 5px;
@@ -148,7 +148,7 @@ button a{
 
 .portfolio .gd h1{
 position: absolute;
-left: 630px;
+left: 640px;
 top: 100px;
 text-decoration: underline;
 font-family:'Arial Narrow', Arial, sans-serif;
@@ -163,30 +163,30 @@ font-weight: lighter;
 }
 
 .gd .no1{
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
 
 }
 
 .no2{
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     position: absolute;
-    left: 385px;
+    left: 415px;
 }
 
 .no3{
-    width: 230px;
-    height: 300px;
+    width: 250px;
+    height: 320px;
     position: absolute;
-    left: 740px;
+    left: 810px;
 }
 
 .no4{
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     position: absolute;
-    left: 1020px;
+    left: 1120px;
 }
 
 .gd .images2{
@@ -197,35 +197,35 @@ font-weight: lighter;
 }
 
 .gd .no5{
-    width: 300px;
-    height: 200px;
+    width: 320px;
+    height: 220px;
 
 }
 
 .no6{
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     position: absolute;
-    left: 385px;
+    left: 415px;
 }
 
 .no7{
-    width: 230px;
-    height: 300px;
+    width: 250px;
+    height: 320px;
     position: absolute;
-    left: 740px;
+    left: 810px;
 }
 
 .no8{
-    width: 230px;
-    height: 300px;
+    width: 250px;
+    height: 320px;
     position: absolute;
-    left: 1020px;
+    left: 1120px;
 }
 
 .gd .no9{
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     position: absolute;
     top: 950px;
     left: 30px;
@@ -251,14 +251,14 @@ font-weight: lighter;
 }
 
 .sd .no1{
-    width: 500px;
-    height: 300px;
+    width: 520px;
+    height: 320px;
 
 }
 
 .sd .no2{
-    width: 500px;
-    height: 300px;
+    width: 520px;
+    height: 320px;
     position: absolute;
     left: 810px;
 }
@@ -321,15 +321,15 @@ font-weight: lighter;
 
 .about img{
     padding: 20px;
-    width: 470px;
-    height: 620px;
+    width: 550px;
+    height: 700px;
     position: absolute;
     top: 60px;
 }
 
 .about .aboutme{
     position: absolute;
-    left: 850px;
+    left: 950px;
     top: 200px;
 }
 

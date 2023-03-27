@@ -34,7 +34,7 @@ nav{
         display: block;
         cursor: pointer;
         position: absolute;
-        left: 270px;
+        left: 290px;
     }
 
     /* transform the nav links back to position */
@@ -81,8 +81,8 @@ nav{
 
 .intro{
     background-color: #033915;
-    height: 500px;
-    width: 300px;
+    height: 640px;
+    width: 440px;
     padding: 15px;
     position: absolute;
     left: 10px;
@@ -155,7 +155,7 @@ button a{
         width: 140px;
         height: 140px;
         position: absolute;
-        left: 165px;
+        left: 185px;
     }
     
     .no3{
@@ -171,7 +171,7 @@ button a{
         height: 140px;
         position: absolute;
         top: 200px;
-        left: 165px;
+        left: 185px;
     }
     
     .gd .images2{
@@ -199,7 +199,7 @@ button a{
         width: 140px;
         height: 170px;
         position: absolute;
-        left: 165px;
+        left: 185px;
         top: 230px;
     }
     
@@ -216,7 +216,7 @@ button a{
         height: 140px;
         position: absolute;
         top: 920px;
-        left: 165px;
+        left: 185px;
         
     }
     
@@ -239,14 +239,14 @@ button a{
     }
     
     .sd .no1{
-        width: 250px;
-        height: 150px;
+        width: 270px;
+        height: 170px;
     
     }
     
     .sd .no2{
-        width: 320px;
-        height: 210px;
+        width: 340px;
+        height: 230px;
         position: absolute;
         top: 200px;
         left: 4px;
@@ -258,30 +258,30 @@ button a{
 .contact .cv{
     position: absolute;
     top: 100px;
-    left: 100px;
+    left: 120px;
 }
 
 .cv h1{
     font-family:var(--body-font);
     font-size: 12px;
-    left: 45px;
+    left: 65px;
     
 }
 
 .cv .mycv{
     position: absolute;
     top: 60px;
-    left: -15px;
+    left: -25px;
 }
 .contacts h5{
     position: absolute;
     top: 300px;
-    left: 105px;
+    left: 125px;
 }
 .contacts p{
     position: absolute;
     top: 350px;
-    left: 60px;
+    left: 80px;
     font-size: 13px;
 }
 
@@ -293,7 +293,7 @@ button a{
 .socials{
     position: absolute;
     top: 490px;
-    left: 105px;
+    left: 125px;
 }
 
 .socials p{
@@ -324,7 +324,7 @@ button a{
     top: 130px;
     background-color: aliceblue;
     width: 260px;
-    height: 420px;
+    height: 430px;
 }
 
 .aboutme h3{
@@ -407,19 +407,20 @@ button a{
 }
 
 .lash .pics .img3{
-    width: 157px;
-    height: 157px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: 600px;
+    top: 670px;
     left: 170px;
 }
 
 
 .lash .pics .img4{
-    width: 160px;
-    height: 160px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: 600px;
+    top: 670px;
+    left: 20px;
     
 }
 
