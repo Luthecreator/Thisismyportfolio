@@ -34,7 +34,7 @@ nav{
         display: block;
         cursor: pointer;
         position: absolute;
-        left: 290px;
+        left: 310px;
     }
 
     /* transform the nav links back to position */
@@ -81,8 +81,8 @@ nav{
 
 .intro{
     background-color: #033915;
-    height: 640px;
-    width: 440px;
+    height: 600px;
+    width: 390px;
     padding: 15px;
     position: absolute;
     left: 10px;
@@ -92,7 +92,7 @@ nav{
 .intro h1{
     position: absolute;
     top: 190px;
-    left: 55px;
+    left: 65px;
     font-size: 30px;
     font-family:var(--headline-font);
     color: antiquewhite;
@@ -102,7 +102,7 @@ nav{
 .intro h3{
     position: absolute;
     top: 250px;
-    left: 60px;
+    left: 70px;
     color: aliceblue;
     font-size: 15px;
     font-weight: lighter;
@@ -117,7 +117,7 @@ nav{
 button{
     position: absolute;
     top: 350px;
-    left: 70px;
+    left: 80px;
     width: 150px;
     height: 40px;
     border-radius: 5px;
@@ -155,7 +155,7 @@ button a{
         width: 140px;
         height: 140px;
         position: absolute;
-        left: 185px;
+        left: 195px;
     }
     
     .no3{
@@ -171,7 +171,7 @@ button a{
         height: 140px;
         position: absolute;
         top: 200px;
-        left: 185px;
+        left: 195px;
     }
     
     .gd .images2{
@@ -199,7 +199,7 @@ button a{
         width: 140px;
         height: 170px;
         position: absolute;
-        left: 185px;
+        left: 195px;
         top: 230px;
     }
     
@@ -216,7 +216,7 @@ button a{
         height: 140px;
         position: absolute;
         top: 920px;
-        left: 185px;
+        left: 195px;
         
     }
     
@@ -311,7 +311,7 @@ button a{
 /* about */
 
 .about img{
-    width: 390px;
+    width: 400px;
     height: 560px;
     position: absolute;
     top: 60px;
@@ -572,7 +572,7 @@ button a{
         height: 520px;
         position: absolute;
         top: 40px;
-        left: -5px;
+        left: 10px;
         padding: -15px;
     }
     .magazine img{
@@ -582,7 +582,7 @@ button a{
         flex-direction: column;
         position: absolute;
         top: 500px;
-        left: -45px;
+        left: -15px;
         padding: 60px;
     }
     
@@ -614,25 +614,25 @@ button a{
         padding: 20px;
         position: absolute;
         top: 100px;
-        left: 10px;
+        left: 20px;
     }
     
     .skn .pics .pic2{
         position: absolute;
         top: 500px;
-        left: 10px;
+        left: 20px;
     }
     
     .skn .pics .pic3{
         position: absolute;
         top: 900px;
-        left: 10px;
+        left: 20px;
     }
     
     .skn .pics .pic4{
         position: absolute;
         top: 1300px;
-        left: 10px;
+        left: 20px;
     }
 
     /* other */
@@ -642,19 +642,19 @@ button a{
     height: 300px;
     padding: 30px;
     position: absolute;
-    left: 10px;
+    left: 20px;
 }
 
 .other .img2{
 position: absolute;
 top: 300px;
-left: 10px;
+left: 20px;
 }
 
 .other .img3{
     position: absolute;
     top: 555px;
-    left: 10px;
+    left: 20px;
 }
 
 .other .img4{
@@ -667,18 +667,22 @@ left: 10px;
     width: 300px;
     height: 320px;
     top: 1060px;
-    left: 10px;
+    left: 20px;
 }
 
 .other .img6{
     position: absolute;
     top: 1330px;
-    left: 10px;
+    left: 20px;
     width: 300px;
     height: 330px;
 }
     
-    
+ .card > img{
+width: 300px;
+height: 300px;
+padding: 20px;
+ }   
 
 
 

@@ -592,7 +592,7 @@ left: 100px;
 .skn h3{
     position: absolute;
     top: 70px;
-    left: 550px;
+    left: 650px;
     font-family:'Arial Narrow', Arial, sans-serif;
     font-weight: lighter;
 }
@@ -608,17 +608,17 @@ left: 100px;
 
 .skn .pics .pic2{
     position: absolute;
-    left: 380px;
+    left: 420px;
 }
 
 .skn .pics .pic3{
     position: absolute;
-    left: 680px;
+    left: 760px;
 }
 
 .skn .pics .pic4{
     position: absolute;
-    left: 1000px;
+    left: 1120px;
 }
 
 /* other */
@@ -658,4 +658,10 @@ left: 480px;
     top: 460px;
     left: 900px;
     width: 330px;
+}
+
+.card > img{
+    width: 400px;
+    height: 400px;
+    padding: 30px;
 }
