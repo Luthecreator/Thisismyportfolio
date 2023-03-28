@@ -82,7 +82,7 @@ nav{
 .intro{
     background-color: #033915;
     height: 600px;
-    width: 390px;
+    width: 320px;
     padding: 15px;
     position: absolute;
     left: 10px;
@@ -320,7 +320,7 @@ button a{
 
 .about .aboutme{
     position: absolute;
-    left: 30px;
+    left: 40px;
     top: 130px;
     background-color: aliceblue;
     width: 260px;
@@ -345,7 +345,7 @@ button a{
 
 .about .iconic{
     position: absolute;
-    left: 82px;
+    left: 92px;
     top: 590px;
     padding: 20px;
     font-size: 8px;
