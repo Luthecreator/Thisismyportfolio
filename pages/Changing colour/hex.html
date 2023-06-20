@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #e6a9a9;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container > h2{
+            background-color: rgb(141, 104, 104);
+            padding: 3rem;
+            border-radius: 3rem;
+            font-size: 4rem;
+            
+        }
+        .container >h2 > span{
+            color: black;
+        }
+        button{
+            display: inline-block;
+            padding: 1rem;
+            border-radius: 5px;
+            outline: none;
+            background-color: #5c4444;
+            font-size: 1.4rem;
+            color: azure;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-centre">
+        <h4>Color Flipper</h4>
+    </div>
+    <main>
+        <div class="container">
+            <h2>Background Color: <span class="color">#e6a9a9</span></h2>
+            <button class="btn btn-hero" id="btn">Generate Color</button>
+        </div>
+    </main>
+    <script>
+        const hex = [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F"];
+        const btn = document.getElementById('btn');
+        // console.log(btn)
+        const color = document.querySelector('.color');
+        
+        function getRandomNumber() {
+            return Math.floor(Math.random() * hex.length)
+
+        }
+        btn.addEventListener('click', function() {
+            let hexColor = '#';
+            for(let i = 0; i < 6; i++){
+                hexColor += hex[getRandomNumber()]
+            }
+            color.textContent = hexColor;
+            document.body.style.backgroundColor = hexColor
+            color.style.color = hexColor
+            // console.log(hexColor)
+        })
+    </script>
+</body>
+</html>

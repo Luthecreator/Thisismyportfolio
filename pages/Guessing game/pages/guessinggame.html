@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            background-image: linear-gradient(to right, rgb(218, 197, 200),rgb(240, 198, 121), rgb(116, 94, 116) );
+        }
+        .container{
+            position: absolute;
+            width: 580px;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            background-color: rgb(230, 209, 212);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: space-around;
+            border-radius: 5px;
+        }
+        h3{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        input[type="text"] {
+            width: 3em;
+            font-weight: 600;
+            color: black;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 5px;
+            border: 2px solid white;
+            font-size: 2rem;
+            margin-bottom: 20px;
+
+
+        }
+        button{
+            width: 160px;
+            padding: 15px 0;
+            border-radius: 5px;
+            background-color: white;
+            color: rgb(100, 94, 94);
+            border: none;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        p{
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h3>I'm thinking of a number between 1 and 100</h3>
+    <h3>Can You Guess It?</h3>
+    <input type="text" name="" id="guess" placeholder="Num">
+    <button onclick="play()" id="my_btn">Guess</button>
+
+    <p id="message1">No. of Guesses: 0</p>
+    <p id="message2">Guessed Numbers are: None</p>
+    <p id="message3"></p>
+</div>
+
+<script>
+let msg1 = document.getElementById("message1");
+let msg2 = document.getElementById("message2");
+let msg3 = document.getElementById("message3")
+console.log(msg1, msg2, msg3)
+
+let answer = Math.floor(Math.random()*50) + 1;
+console.log(answer)
+let noOfGuesses = 0;
+let guessed_nums = [];
+
+function play(){
+    let user_guess = document.getElementById("guess").value;
+    if(user_guess < 1 || user_guess > 100){
+        alert('Please enter a number between 1 and 100');
+    } else{
+        guessed_nums.push(user_guess);
+        noOfGuesses+= 1;
+
+        if(user_guess < answer){
+            msg1.textContent = "Your Guess is too low.";
+            msg2.textContent = `No. of guesses: ${noOfGuesses} `;
+            if(guessed_nums.length == 1 ){
+                msg3.textContent = `guessed numbers is ${guessed_nums}`
+            }else{
+                msg3.textContent = `guessed numbers are ${guessed_nums}`
+            }
+        }
+        else if(user_guess > answer){
+            msg1.textContent = "Your guess is too high.";
+            msg2.textContent = `No. of guesses: ${noOfGuesses}`
+            msg3.textContent = `You guessed it in ${noOfGuesses}`
+        }
+        else if (user_guess == answer){
+            msg1.textContent = "Yippie You Win!!! Congratulation";
+            msg2.textContent = `The number was: ${answer}`;
+            msg3.textContent = `You guessed it in ${noOfGuesses} guesses`
+        }
+    }
+}
+</script>
+</body>
+</html>
